@@ -10,16 +10,13 @@
             text-align: center;
         }
         .bottom-right {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            width: 100px;
-            text-align: right;
-            margin-right: 10px; /* Optional for better spacing */
-            margin-bottom: 10px; /* Optional for better spacing */
-        }
-        footer {
-            position: relative; /* Ensure the positioning of child elements works as expected */
+            position: fixed;  /* Fixed positioning relative to the viewport */
+            bottom: 0;        /* Place it at the bottom */
+            right: 0;         /* Place it on the right */
+            width: 100px;     /* Optional width */
+            text-align: right; /* Align the text to the right */
+            margin-right: 10px; /* Optional: add margin from the right edge */
+            margin-bottom: 10px; /* Optional: add margin from the bottom edge */
         }
     </style>
 </head>
@@ -36,19 +33,21 @@
 
     <div class="container">
         <h2>MY STORIES!</h2>
-        <p>click on each link below to access them. :)</p>
+        <p>Click on each link below to access them. :)</p>
         <a href="JosephsTapes.html" class="page-link">Joseph's Tapes, Entry #44</a>
     </div>
 
     <footer>
-        <p>made with some help from jackers :)</p>
+        <p>Made with some help from jackers :)</p>
         <audio controls loop>
             <source src="lost_by_darmuon.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
-        <div class="bottom-right"> 
-            <p>discord: pompousFurball</p>
-        </div>
-    </footer> 
+    </footer>
+
+    <!-- Fixed at bottom-right of screen -->
+    <div class="bottom-right"> 
+        <p>discord: pompousFurball</p>
+    </div>
 </body>
 </html>
